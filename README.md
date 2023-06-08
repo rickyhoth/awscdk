@@ -1,4 +1,4 @@
-# This is a provisioning tool for build your AWS workload by fill in a couple of csv files and handle all of the dependencies. 
+# This is a provisioning tool for you to build your AWS workload by fill in a couple of csv files and handle all of the dependencies. 
 
 Please fill in the csv file in "prepare/config" and the env.txt file in "prepare/env".
 
