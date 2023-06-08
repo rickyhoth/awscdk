@@ -1,0 +1,1 @@
+GroupName,VpcId,Ingress_Egress,IpProtocol,FromPort,ToPort,CidrIp,SourceSecurityGroupId,Description

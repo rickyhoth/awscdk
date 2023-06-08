@@ -1,0 +1,159 @@
+﻿VpcId,GroupName,Ingress_Egress,IpProtocol,FromPort,ToPort,CidrIp,SourceSecurityGroupId,Description
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,8014,8014,10.216.132.205/32,,SEP to SEPM
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,443,443,10.216.132.205/32,,SEP to SEPM
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,7070,7070,10.216.132.206/32,,SEP to SEP-LUA
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,8443,8444,10.218.80.31/32,,Illumio VEN to PCE (For Registration)
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,8443,8444,10.218.80.33/32,,Illumio VEN to PCE (For Registration)
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,8443,8444,10.218.80.37/32,,Illumio VEN to PCE (For Registration)
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,8443,8444,10.218.80.32/32,,Illumio VEN to PCE (For Registration)
+,sin-ct1-commonsvc-sg,SecurityGroupEgress,TCP,8443,8444,10.218.80.34/32,,Illumio VEN to PCE (For Registration)
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.41/32,,LIME ADDM Appliance IMC3
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.42/32,,LIME ADDM Appliance IMC4
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.46/32,,LIME ADDM NonProd Win Proxy IMC3
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.47/32,,LIME ADDM NonProd Win Proxy IMC4
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.212.139.79/32,,Green ADDM Appliance
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.213.151.205/32,,Green ADDM NonProd Win proxy
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.213.150.66/32,,Green ADDM NonProd Win proxy
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.212.139.242/32,,Prod Qualys Scanner HKGX3SVS0002
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.215.134.60/32,,Prod Qualys Scanner HKGX4SVS0002
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.48/31,,Prod Qualys Scanner HKGX3SVS0003 HKGX4SVS0003
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.59/32,,Prod Qualys Scanner HKGX3SVS0004
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.60/31,,Prod Qualys Scanner HKGX4SVS0004 HKGX3SVS0005
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.62/32,,Prod Qualys Scanner HKGX4SVS0005
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.77/32,,Prod Qualys Scanner HKGX3SVS0006
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.78/31,,Prod Qualys Scanner HKGX3SVS0007 HKGX4SVS0006
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,All,,,10.218.80.80/32,,Prod Qualys Scanner HKGX4SVS0007
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,443,443,10.218.80.21/32,,IMC3/4 Prod FireEye
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,80,80,10.218.80.21/32,,IMC3/4 Prod FireEye
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,8443,8444,10.218.80.31/32,,Illumio PCE to VEN
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,8443,8444,10.218.80.33/32,,Illumio PCE to VEN
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,8443,8444,10.218.80.37/32,,Illumio PCE to VEN
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,8443,8444,10.218.80.32/32,,Illumio PCE to VEN
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,8443,8444,10.218.80.34/32,,Illumio PCE to VEN
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,139,139,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,139,139,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,139,139,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,135,135,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,135,135,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,135,135,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,ICMP,,,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers Ping
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,ICMP,,,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers Ping
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,ICMP,,,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers Ping
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,445,445,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,445,445,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,445,445,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers for Windows
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,1433,1433,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers for MS SQL
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,1433,1433,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers for MS SQL
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,1433,1433,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers for MS SQL
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,1521,1521,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers for Oracle DB
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,1521,1521,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers for Oracle DB
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,1521,1521,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers for Oracle DB
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,22,22,10.212.72.34/32,,IMC3/4 Prod CyberArk CPM Servers for RHEL
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,22,22,10.212.72.35/32,,IMC3/4 Prod CyberArk CPM Servers for RHEL
+,sin-ct1-commonsvc-sg,SecurityGroupIngress,TCP,22,22,10.215.72.29/32,,IMC3/4 Prod CyberArk CPM Servers for RHEL
+,sin-ct1-basicinfra-sg,SecurityGroupEgress,-1,0,65535,172.31.128.0/22,,Allow AWS ETE CoreService VPC
+,sin-ct1-basicinfra-sg,SecurityGroupEgress,-1,0,65535,10.213.148.24/32,,Allow IMC3/4 ETE DC Controllers
+,sin-ct1-basicinfra-sg,SecurityGroupEgress,-1,0,65535,10.213.148.25/32,,Allow IMC3/4 ETE DC Controllers
+,sin-ct1-basicinfra-sg,SecurityGroupEgress,-1,0,65535,10.216.132.24/32,,Allow IMC3/4 ETE DC Controllers
+,sin-ct1-basicinfra-sg,SecurityGroupEgress,-1,0,65535,10.216.132.25/32,,Allow IMC3/4 ETE DC Controllers
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,22,22,10.213.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,22,22,10.213.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,22,22,10.216.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,22,22,10.216.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,443,443,10.213.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,443,443,10.213.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,443,443,10.216.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,443,443,10.216.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,445,445,10.213.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,445,445,10.213.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,445,445,10.216.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,445,445,10.216.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3389,3389,10.213.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3389,3389,10.213.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3389,3389,10.216.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3389,3389,10.216.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,ICMP,8,-1,10.213.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,ICMP,8,-1,10.213.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,ICMP,8,-1,10.216.92.0/22,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,ICMP,8,-1,10.216.96.0/19,,On-Premises ETE VDI
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.213.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.213.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.216.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.216.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.213.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.213.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.216.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1433,1433,10.216.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.213.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.213.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.216.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.216.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.213.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.213.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.216.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,1521,1521,10.216.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.213.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.213.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.216.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.216.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.213.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.213.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.216.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,2484,2484,10.216.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.213.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.213.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.216.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.216.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.213.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.213.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.216.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,3306,3306,10.216.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.213.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.213.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.216.92.0/26,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.216.96.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.213.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.213.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.216.93.32/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg,SecurityGroupIngress,TCP,5432,5432,10.216.102.64/27,,On-Premises ETE VDI pool00 and 11
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,80,80,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,443,443,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,8530,8530,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,8531,8531,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,-1,0,65535,10.216.134.130/32,,Allow IMC3/4 Internal CA servers
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,-1,0,65535,10.216.132.221/32,,Allow IMC3/4 Internal CA servers
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,-1,0,65535,10.216.132.222/32,,Allow IMC3/4 Internal CA servers
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,443,443,172.31.131.0/24,,Allow AWS ETE RHEL Repos
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,5044,5044,172.31.211.21/32,,Allow AWS Prod ELK
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,88,88,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,88,88,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,UDP,88,88,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,UDP,88,88,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,137,137,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,137,137,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,UDP,137,137,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,UDP,137,137,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,389,389,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,389,389,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,UDP,389,389,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,UDP,389,389,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,464,464,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,464,464,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,3268,3268,10.213.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,3268,3268,10.216.156.29/32,,On-premises ETE vLDAP
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,22,22,172.31.128.20/32,,AWS Policy Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,22,22,172.31.129.20/32,,AWS Policy Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,12345,12345,172.31.128.20/32,,AWS Policy Server
+,sin-ct1-basicinfra-sg2,SecurityGroupEgress,TCP,12345,12345,172.31.129.20/32,,AWS Policy Server
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,10.213.72.70/32,,On-Premises ETE Ansible
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,10.216.72.70/32,,On-Premises ETE Ansible
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,172.31.128.70/32,,Coreservice-ETE-Ansible-node
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,172.31.129.70/32,,Coreservice-ETE-Ansible-node
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,135,135,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,UDP,135,135,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,445,445,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,10123,10123,10.216.132.178/32,,On-Premises ETE SCCM Primary Server
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,10.216.72.58/32,,PASU Mgmt Console
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,10.216.72.62/32,,PASU Mgmt Console
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,172.31.128.20/32,,AWS Policy Server
+,sin-ct1-basicinfra-sg2,SecurityGroupIngress,TCP,22,22,172.31.129.20/32,,AWS Policy Server
